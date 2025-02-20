@@ -19,8 +19,9 @@ public class Customer {
     private String name;
 
 
-    @OneToMany(mappedBy = "customer",cascade=CascadeType.ALL )
-    private List<Order> orders;
+  @OneToOne
+  @JoinColumn(name = "nic_number")
+  private IDCard idCard;
 
 
 }

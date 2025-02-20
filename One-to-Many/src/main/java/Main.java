@@ -16,12 +16,10 @@ public class Main {
         List<Order> orders = new ArrayList<Order>();
 
         Order order1 = new Order();
-        order1.setId(1);
         order1.setOrderDate("2025/02/12");
         order1.setCustomer(customer);
 
         Order order2 = new Order();
-        order2.setId(2);
         order2.setOrderDate("2025/01/11");
         order2.setCustomer(customer);
 
