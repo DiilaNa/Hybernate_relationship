@@ -17,7 +17,7 @@ public class Item {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private int qty;
-    @ManyToMany
+    @ManyToMany(mappedBy = "items")
     private List<Order> orders;
 
 

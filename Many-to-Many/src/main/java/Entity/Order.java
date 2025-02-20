@@ -18,7 +18,13 @@ public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private String date;
+
     @ManyToMany
-   private String date;
+    @JoinTable(
+            name = "order_detail",
+            joinColumns = @JoinColumn(name = "order_id"),
+            inverseJoinColumns = @JoinColumn(name = "item_id")
+    )
     private List<Item> items;
 }
