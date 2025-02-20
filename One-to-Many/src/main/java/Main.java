@@ -13,7 +13,7 @@ public class Main {
         customer.setId(1);
         customer.setName("John Doe");
 
-        List<Order> orders = new ArrayList<Order>();
+        List<Order> orders = new ArrayList<>();
 
         Order order1 = new Order();
         order1.setOrderDate("2025/02/12");
