@@ -20,6 +20,7 @@ public class Order {
     private int id;
 
    private String orderDate;
-   @OneToMany
-   private List<Customer> customer;
+
+    @ManyToOne
+    private Customer customer;
 }

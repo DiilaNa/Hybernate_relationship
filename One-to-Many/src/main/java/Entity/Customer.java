@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -15,8 +17,10 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    @ManyToOne
-    private Customer customer;
+
+
+    @OneToMany(mappedBy = "customer")
+    private List<Order> orders;
 
 
 }
