@@ -1,0 +1,24 @@
+package Entity;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Data
+@Table(name = "orders")
+
+public class Order {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    @ManyToMany
+   private String date;
+    private List<Item> items;
+}

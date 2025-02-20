@@ -11,6 +11,7 @@
     <modules>
         <module>One-to-one</module>
         <module>One-to-Many</module>
+        <module>Many-to-Many</module>
     </modules>
 
     <properties>
