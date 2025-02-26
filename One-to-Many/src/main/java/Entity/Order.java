@@ -1,15 +1,16 @@
 package Entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Data
+@Entity/*
+@Data*/
+@Getter
+@Setter
+
 @Table(name = "orders")
 
 public class Order {
@@ -21,4 +22,6 @@ public class Order {
 
     @ManyToOne
     private Customer customer;
+
+
 }

@@ -12,6 +12,7 @@
         <module>One-to-one</module>
         <module>One-to-Many</module>
         <module>Many-to-Many</module>
+        <module>SuperMarket</module>
     </modules>
 
     <properties>
