@@ -13,6 +13,7 @@
         <module>One-to-Many</module>
         <module>Many-to-Many</module>
         <module>SuperMarket</module>
+        <module>HybernateLifeCycle</module>
     </modules>
 
     <properties>
