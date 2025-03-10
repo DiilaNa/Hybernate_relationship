@@ -32,9 +32,12 @@ public class Main {
        /*session.update(customer);*/
        session.merge(customer); /*merge is used instead of update*/
 
-//        session.delete(customer); reove is used on for delete
+//        session.delete(customer); remove is used on for delete
         session.remove(customer);
 
+        /*data fetching*/
+      /*  eager fetching = one querry for all the parent data  */
+      /*  lazy fetching = querry for each fetching , supplies on demand*/
 
     }
 }

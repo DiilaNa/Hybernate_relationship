@@ -14,6 +14,7 @@
         <module>Many-to-Many</module>
         <module>SuperMarket</module>
         <module>HybernateLifeCycle</module>
+        <module>Querry</module>
     </modules>
 
     <properties>
